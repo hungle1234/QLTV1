@@ -1,0 +1,347 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+namespace QuanLyThuVien
+{
+    public partial class frmMain : Form
+    {
+        public frmMain()
+        {
+            InitializeComponent();
+        }
+        public static string TenDN, MatKhau, Quyen;
+        SqlCommand sqlCommand;
+        public Object layGiaTri(string sql) //lay gia tri cua  cot dau tien trong bang 
+        {
+            sqlCommand = new SqlCommand();
+            sqlCommand.CommandText = sql;
+            sqlCommand.CommandType = CommandType.Text;
+            sqlCommand.Connection = Con;
+
+            //CHi can lay ve gia tri cua mot truong thoi thi dung pt nao ? - ExecuteScalar
+            Object obj = sqlCommand.ExecuteScalar(); //neu co loi thi phai xem lai cua lenh SQL o ben kia
+            return obj;
+            //Ket qua de dau ? - de trong obj
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TenDN = textBox1.Text;
+            MatKhau = textBox2.Text;
+            if (TenDN != "")
+            {
+                object Q = layGiaTri("select QuyenHan from tblNhanVien where TaiKhoan='" + TenDN + "' and MatKhau='" + MatKhau + "'");
+                if (Q == null)
+                {
+                    MessageBox.Show("Sai tài khoản");
+                }
+                else
+                {
+                    MessageBox.Show("Đăng nhập thành công");
+                    Quyen = Convert.ToString(Q);
+                    if (Quyen == "user")
+                    {
+                        quảnLyToolStripMenuItem.Enabled = true;
+                        tìmKiếmToolStripMenuItem.Enabled = true;
+                        tìmKiếmSáchToolStripMenuItem.Enabled = true;
+                        tìmKiếmĐGToolStripMenuItem.Enabled = true;
+                        cậpNhậtToolStripMenuItem.Enabled = true;
+                        cậpNhậtSáchToolStripMenuItem.Enabled = true;
+                        cậpNhậtTácGiảToolStripMenuItem.Enabled = true;
+                        cậpNhậtToolStripMenuItem1.Enabled = true;
+                        cậpNhậtLĩnhVựcToolStripMenuItem.Enabled = true;
+                        cậpNhậtNhàXuấtBảnToolStripMenuItem.Enabled = true;
+                        tácGiảToolStripMenuItem.Enabled = true;
+                        nhàXuấtBảnToolStripMenuItem.Enabled = true;
+                        lĩnhVựcToolStripMenuItem.Enabled = true;
+                        độcGiảToolStripMenuItem.Enabled = true;
+                        sáchToolStripMenuItem.Enabled = true;
+                        tạoTàiKhoảnToolStripMenuItem.Enabled = false;
+                        cậpNhậtNhânViênToolStripMenuItem.Enabled = true;
+                        đổiMậtKhẩuToolStripMenuItem.Enabled = true;
+                        báoCáoToolStripMenuItem1.Enabled = true;
+                    }
+                    if (Quyen == "admin")
+                    {
+                        quảnLyToolStripMenuItem.Enabled = true;
+                        tìmKiếmToolStripMenuItem.Enabled = true;
+                        tìmKiếmSáchToolStripMenuItem.Enabled = true;
+                        KiêmTratoolStripMenuItem1.Enabled = true;
+                        tìmKiếmĐGToolStripMenuItem.Enabled = true;
+                        cậpNhậtToolStripMenuItem.Enabled = true;
+                        cậpNhậtSáchToolStripMenuItem.Enabled = true;
+                        cậpNhậtTácGiảToolStripMenuItem.Enabled = true;
+                        cậpNhậtToolStripMenuItem1.Enabled = true;
+                        cậpNhậtLĩnhVựcToolStripMenuItem.Enabled = true;
+                        cậpNhậtNhàXuấtBảnToolStripMenuItem.Enabled = true;
+                        tácGiảToolStripMenuItem.Enabled = true;
+                        nhàXuấtBảnToolStripMenuItem.Enabled = true;
+                        lĩnhVựcToolStripMenuItem.Enabled = true;
+                        độcGiảToolStripMenuItem.Enabled = true;
+                        sáchToolStripMenuItem.Enabled = true;
+                        tạoTàiKhoảnToolStripMenuItem.Enabled = true;
+                        cậpNhậtNhânViênToolStripMenuItem.Enabled = true;
+                        đổiMậtKhẩuToolStripMenuItem.Enabled = true;
+                        báoCáoToolStripMenuItem1.Enabled = true;
+                    }
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    groupBox1.Enabled = false;
+                }
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn thoát khỏi chương trình không ?", "FormClosing", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                e.Cancel = false;
+            else
+                e.Cancel = true;
+        }
+
+        private void thoátToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }       
+        SqlConnection Con;
+        private void Main_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Con = new SqlConnection();
+                Con.ConnectionString = @"Data Source=DESKTOP-NVKM6II\SQLEXPRESS;Initial Catalog=Library;Integrated Security=True";
+                Con.Open();
+            }
+            catch { MessageBox.Show("Không thể kết nối"); }
+                
+        }
+
+        private void cậpNhậtSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcapnhatsach cnsach = new frmcapnhatsach();
+            cnsach.Show();
+        }
+
+        private void cậpNhậtToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmcapnhatdocgia cndocgia = new frmcapnhatdocgia();
+            cndocgia.Show();
+
+        }
+
+        private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void cậpNhậtNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcapnhatnhanvien cnnhanvien = new frmcapnhatnhanvien();
+            cnnhanvien.Show();
+        }
+
+        private void cậpNhậtTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcapnhatTG cnTG = new frmcapnhatTG();
+            cnTG.Show();
+        }
+
+        private void cậpNhậtNhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcapnhatNXB cnNXB = new frmcapnhatNXB();
+            cnNXB.Show();
+        }
+
+        private void cậpNhậtLĩnhVựcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmcapnhatLv cnLV = new frmcapnhatLv();
+            cnLV.Show();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDoiMatKhau doimatkhau = new frmDoiMatKhau();
+            doimatkhau.Show();
+        }
+
+
+        private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTaoTaiKhoan tk = new frmTaoTaiKhoan();
+            tk.Show();
+        }
+
+        
+        private void tácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmttTacgia ttTG = new frmttTacgia();
+            ttTG.Show();
+        }
+
+        private void nhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmttNXB ttnxb = new frmttNXB();
+            ttnxb.Show();
+        }
+
+        private void lĩnhVựcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmttLinhVuc ttlv = new frmttLinhVuc();
+            ttlv.Show();
+        }
+
+        private void sáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmttSach ttsach = new frmttSach();
+            ttsach.Show();
+        }
+
+        private void độcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmttDocgia ttDG = new frmttDocgia();
+            ttDG.Show();
+        }
+
+
+       
+        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            groupBox1.Enabled = true;
+            quảnLyToolStripMenuItem.Enabled = false;
+            tìmKiếmToolStripMenuItem.Enabled = false;
+            tìmKiếmSáchToolStripMenuItem.Enabled = false;
+            KiêmTratoolStripMenuItem1.Enabled = false;
+            tìmKiếmĐGToolStripMenuItem.Enabled = false;
+            cậpNhậtToolStripMenuItem.Enabled = false;
+            mượnSáchToolStripMenuItem.Enabled = false;
+            cậpNhậtSáchToolStripMenuItem.Enabled = false;
+            cậpNhậtTácGiảToolStripMenuItem.Enabled = false;
+            cậpNhậtToolStripMenuItem1.Enabled = false;
+            cậpNhậtLĩnhVựcToolStripMenuItem.Enabled = false;
+            cậpNhậtNhàXuấtBảnToolStripMenuItem.Enabled = false;
+            tácGiảToolStripMenuItem.Enabled = false;
+            nhàXuấtBảnToolStripMenuItem.Enabled = false;
+            lĩnhVựcToolStripMenuItem.Enabled = false;
+            độcGiảToolStripMenuItem.Enabled = false;
+            sáchToolStripMenuItem.Enabled = false;
+            tạoTàiKhoảnToolStripMenuItem.Enabled = false;
+            cậpNhậtNhânViênToolStripMenuItem.Enabled = false;
+            đổiMậtKhẩuToolStripMenuItem.Enabled = false;
+            báoCáoToolStripMenuItem1.Enabled = false;
+        }
+
+        private void tìmKiếmSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmtimkiemSach Sach = new frmtimkiemSach();
+            Sach.Show();
+        }
+
+        private void tìmKiếmĐGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTimkiemDG Dg = new frmTimkiemDG();
+            Dg.Show();
+        }
+
+        private void KiêmTratoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmKiemTraTTNhanVien K = new frmKiemTraTTNhanVien();
+            K.Show();
+        }
+
+        private void label1_Load(object sender, EventArgs e)
+        {
+            Timer t = new Timer();
+            //timer interval
+            t.Interval = 1000;  //in milliseconds
+
+            t.Tick += new EventHandler(this.t_Tick);
+
+            //start timer when form loads
+            t.Start();  //this will use t_Tick() method
+        }
+
+       
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, System.IO.Path.Combine(Application.StartupPath, "MCSA.chm"));
+        }
+
+        
+        private void độcGiảToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmrpDocGia rdg = new frmrpDocGia();
+            rdg.Show();
+        }
+
+        private void tácGiảToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmrpTacGia rtg = new frmrpTacGia();
+            rtg.Show();
+        }
+
+        private void lĩnhVựcToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmrpLinhVuc rlv = new frmrpLinhVuc();
+            rlv.Show();
+        }
+
+        //timer eventhandler
+        private void t_Tick(object sender, EventArgs e)
+        {
+            //get current time
+            int hh = DateTime.Now.Hour;
+            int mm = DateTime.Now.Minute;
+            int ss = DateTime.Now.Second;
+
+            //time
+            string time = "";
+
+            //padding leading zero
+            if (hh < 10)
+            {
+                time += "0" + hh;
+            }
+            else
+            {
+                time += hh;
+            }
+            time += ":";
+
+            if (mm < 10)
+            {
+                time += "0" + mm;
+            }
+            else
+            {
+                time += mm;
+            }
+            time += ":";
+
+            if (ss < 10)
+            {
+                time += "0" + ss;
+            }
+            else
+            {
+                time += ss;
+            }
+
+            //update label
+            label1.Text = time;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dateTimePicker1.ShowUpDown = true;
+            DateTime date = dateTimePicker1.Value;
+            date.AddDays(-5);
+        }
+
+        }
+    }
