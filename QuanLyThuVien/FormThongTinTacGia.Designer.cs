@@ -36,18 +36,19 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 11);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(760, 540);
+            this.dataGridView1.Size = new System.Drawing.Size(760, 501);
             this.dataGridView1.TabIndex = 0;
             // 
-            // ttTacgia
+            // FormThongTinTacGia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 564);
+            this.ClientSize = new System.Drawing.Size(784, 524);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "ttTacgia";
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "FormThongTinTacGia";
             this.Text = "Thông tin tác giả";
             this.Load += new System.EventHandler(this.ttTacgia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

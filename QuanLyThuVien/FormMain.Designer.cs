@@ -122,6 +122,7 @@
             // KiêmTratoolStripMenuItem1
             // 
             this.KiêmTratoolStripMenuItem1.Enabled = false;
+            this.KiêmTratoolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KiêmTratoolStripMenuItem1.Image = global::QuanLyThuVien.Properties.Resources.onebit_01;
             this.KiêmTratoolStripMenuItem1.Name = "KiêmTratoolStripMenuItem1";
             this.KiêmTratoolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
@@ -137,6 +138,7 @@
             // cậpNhậtNhânViênToolStripMenuItem
             // 
             this.cậpNhậtNhânViênToolStripMenuItem.Enabled = false;
+            this.cậpNhậtNhânViênToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cậpNhậtNhânViênToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_01;
             this.cậpNhậtNhânViênToolStripMenuItem.Name = "cậpNhậtNhânViênToolStripMenuItem";
             this.cậpNhậtNhânViênToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
@@ -151,6 +153,7 @@
             // 
             // tạoTàiKhoảnToolStripMenuItem
             // 
+            this.tạoTàiKhoảnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tạoTàiKhoảnToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_01;
             this.tạoTàiKhoảnToolStripMenuItem.Name = "tạoTàiKhoảnToolStripMenuItem";
             this.tạoTàiKhoảnToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
@@ -166,6 +169,7 @@
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Enabled = false;
+            this.đổiMậtKhẩuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.đổiMậtKhẩuToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_01;
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
             this.đổiMậtKhẩuToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
@@ -180,6 +184,7 @@
             // 
             // đăngNhậpToolStripMenuItem
             // 
+            this.đăngNhậpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.đăngNhậpToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_01;
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
             this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
@@ -206,62 +211,67 @@
             // cậpNhậtSáchToolStripMenuItem
             // 
             this.cậpNhậtSáchToolStripMenuItem.Enabled = false;
+            this.cậpNhậtSáchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cậpNhậtSáchToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_20;
             this.cậpNhậtSáchToolStripMenuItem.Name = "cậpNhậtSáchToolStripMenuItem";
             this.cậpNhậtSáchToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.cậpNhậtSáchToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.cậpNhậtSáchToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.cậpNhậtSáchToolStripMenuItem.Text = "Cập Nhật Sách";
             this.cậpNhậtSáchToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtSáchToolStripMenuItem_Click);
             // 
             // cậpNhậtToolStripMenuItem1
             // 
             this.cậpNhậtToolStripMenuItem1.Enabled = false;
+            this.cậpNhậtToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cậpNhậtToolStripMenuItem1.Image = global::QuanLyThuVien.Properties.Resources.onebit_20;
             this.cậpNhậtToolStripMenuItem1.Name = "cậpNhậtToolStripMenuItem1";
             this.cậpNhậtToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-            this.cậpNhậtToolStripMenuItem1.Size = new System.Drawing.Size(242, 22);
+            this.cậpNhậtToolStripMenuItem1.Size = new System.Drawing.Size(240, 22);
             this.cậpNhậtToolStripMenuItem1.Text = "Cập Nhật Độc Giả";
             this.cậpNhậtToolStripMenuItem1.Click += new System.EventHandler(this.cậpNhậtToolStripMenuItem1_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(237, 6);
             // 
             // cậpNhậtTácGiảToolStripMenuItem
             // 
             this.cậpNhậtTácGiảToolStripMenuItem.Enabled = false;
+            this.cậpNhậtTácGiảToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cậpNhậtTácGiảToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_20;
             this.cậpNhậtTácGiảToolStripMenuItem.Name = "cậpNhậtTácGiảToolStripMenuItem";
             this.cậpNhậtTácGiảToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.cậpNhậtTácGiảToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.cậpNhậtTácGiảToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.cậpNhậtTácGiảToolStripMenuItem.Text = "Cập Nhật Tác Giả";
             this.cậpNhậtTácGiảToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtTácGiảToolStripMenuItem_Click);
             // 
             // cậpNhậtLĩnhVựcToolStripMenuItem
             // 
             this.cậpNhậtLĩnhVựcToolStripMenuItem.Enabled = false;
+            this.cậpNhậtLĩnhVựcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cậpNhậtLĩnhVựcToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_20;
             this.cậpNhậtLĩnhVựcToolStripMenuItem.Name = "cậpNhậtLĩnhVựcToolStripMenuItem";
             this.cậpNhậtLĩnhVựcToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.cậpNhậtLĩnhVựcToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.cậpNhậtLĩnhVựcToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.cậpNhậtLĩnhVựcToolStripMenuItem.Text = "Cập Nhật Lĩnh Vực";
             this.cậpNhậtLĩnhVựcToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtLĩnhVựcToolStripMenuItem_Click);
             // 
             // cậpNhậtNhàXuấtBảnToolStripMenuItem
             // 
             this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Enabled = false;
+            this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_20;
             this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Name = "cậpNhậtNhàXuấtBảnToolStripMenuItem";
             this.cậpNhậtNhàXuấtBảnToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
             this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Text = "Cập Nhật Nhà Xuất Bản";
             this.cậpNhậtNhàXuấtBảnToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtNhàXuấtBảnToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(239, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(237, 6);
             // 
             // mượnSáchToolStripMenuItem
             // 
@@ -287,6 +297,7 @@
             // tácGiảToolStripMenuItem
             // 
             this.tácGiảToolStripMenuItem.Enabled = false;
+            this.tácGiảToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tácGiảToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_05;
             this.tácGiảToolStripMenuItem.Name = "tácGiảToolStripMenuItem";
             this.tácGiảToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
@@ -296,6 +307,7 @@
             // nhàXuấtBảnToolStripMenuItem
             // 
             this.nhàXuấtBảnToolStripMenuItem.Enabled = false;
+            this.nhàXuấtBảnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nhàXuấtBảnToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_05;
             this.nhàXuấtBảnToolStripMenuItem.Name = "nhàXuấtBảnToolStripMenuItem";
             this.nhàXuấtBảnToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
@@ -305,6 +317,7 @@
             // lĩnhVựcToolStripMenuItem
             // 
             this.lĩnhVựcToolStripMenuItem.Enabled = false;
+            this.lĩnhVựcToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lĩnhVựcToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_05;
             this.lĩnhVựcToolStripMenuItem.Name = "lĩnhVựcToolStripMenuItem";
             this.lĩnhVựcToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
@@ -319,6 +332,7 @@
             // sáchToolStripMenuItem
             // 
             this.sáchToolStripMenuItem.Enabled = false;
+            this.sáchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sáchToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_05;
             this.sáchToolStripMenuItem.Name = "sáchToolStripMenuItem";
             this.sáchToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
@@ -328,6 +342,7 @@
             // độcGiảToolStripMenuItem
             // 
             this.độcGiảToolStripMenuItem.Enabled = false;
+            this.độcGiảToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.độcGiảToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_05;
             this.độcGiảToolStripMenuItem.Name = "độcGiảToolStripMenuItem";
             this.độcGiảToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
@@ -350,6 +365,7 @@
             // tìmKiếmSáchToolStripMenuItem
             // 
             this.tìmKiếmSáchToolStripMenuItem.Enabled = false;
+            this.tìmKiếmSáchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tìmKiếmSáchToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_02;
             this.tìmKiếmSáchToolStripMenuItem.Name = "tìmKiếmSáchToolStripMenuItem";
             this.tìmKiếmSáchToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
@@ -365,6 +381,7 @@
             // tìmKiếmĐGToolStripMenuItem
             // 
             this.tìmKiếmĐGToolStripMenuItem.Enabled = false;
+            this.tìmKiếmĐGToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tìmKiếmĐGToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.onebit_02;
             this.tìmKiếmĐGToolStripMenuItem.Name = "tìmKiếmĐGToolStripMenuItem";
             this.tìmKiếmĐGToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
@@ -380,9 +397,10 @@
             this.báoCáoTácGiảToolStripMenuItem,
             this.báoCáoLĩnhVựcToolStripMenuItem,
             this.báoCáoNXBToolStripMenuItem});
+            this.báoCáoToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.báoCáoToolStripMenuItem1.Image = global::QuanLyThuVien.Properties.Resources.download;
             this.báoCáoToolStripMenuItem1.Name = "báoCáoToolStripMenuItem1";
-            this.báoCáoToolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
+            this.báoCáoToolStripMenuItem1.Size = new System.Drawing.Size(78, 20);
             this.báoCáoToolStripMenuItem1.Text = "Báo Cáo";
             // 
             // báoCáoSáchToolStripMenuItem
@@ -427,6 +445,7 @@
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpToolStripMenuItem.Image = global::QuanLyThuVien.Properties.Resources.help;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
@@ -441,6 +460,7 @@
             // 
             // thoátToolStripMenuItem1
             // 
+            this.thoátToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thoátToolStripMenuItem1.Image = global::QuanLyThuVien.Properties.Resources.onebit_35;
             this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
             this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(66, 20);
@@ -470,7 +490,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(430, 188);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 25);
@@ -497,20 +517,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(310, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 14);
+            this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Username :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(310, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 14);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password :";
             // 

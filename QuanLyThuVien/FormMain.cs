@@ -45,7 +45,7 @@ namespace QuanLyThuVien
                 }
                 else
                 {
-                    ////MessageBox.Show("Đăng nhập thành công");
+                    //MessageBox.Show("Đăng nhập thành công");
                     Quyen = Convert.ToString(Q);
                     if (Quyen == "user")
                     {
@@ -126,85 +126,85 @@ namespace QuanLyThuVien
 
         private void cậpNhậtSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCapNhatSach cnsach = new FormCapNhatSach();
-            cnsach.Show();
+            FormCapNhatSach formcapnhatsach = new FormCapNhatSach();
+            formcapnhatsach.Show();
         }
 
         private void cậpNhậtToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormCapNhatDocGia cndocgia = new FormCapNhatDocGia();
-            cndocgia.Show();
+            FormCapNhatDocGia formcapnhatdocgia = new FormCapNhatDocGia();
+            formcapnhatdocgia.Show();
         }
         private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTimKiemSach tk = new FormTimKiemSach();
-            tk.Show();
+            FormTimKiemSach formtimkiemsach = new FormTimKiemSach();
+            formtimkiemsach.Show();
         }
 
         private void cậpNhậtNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCapNhatNhanVien cnnhanvien = new FormCapNhatNhanVien();
-            cnnhanvien.Show();
+            FormCapNhatNhanVien formcapnhatnhanvien = new FormCapNhatNhanVien();
+            formcapnhatnhanvien.Show();
         }
 
         private void cậpNhậtTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCapNhatTacGia cnTG = new FormCapNhatTacGia();
-            cnTG.Show();
+            FormCapNhatTacGia formcapnhattacgia = new FormCapNhatTacGia();
+            formcapnhattacgia.Show();
         }
 
         private void cậpNhậtNhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCapNhatNhaXuatBan cnNXB = new FormCapNhatNhaXuatBan();
-            cnNXB.Show();
+            FormCapNhatNhaXuatBan formcapnhatnhaxuatban = new FormCapNhatNhaXuatBan();
+            formcapnhatnhaxuatban.Show();
         }
 
         private void cậpNhậtLĩnhVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmcapnhatLv cnLV = new frmcapnhatLv();
-            cnLV.Show();
+            FormThongTinLinhVuc formthongtinlinhvuc = new FormThongTinLinhVuc();
+            formthongtinlinhvuc.Show();
         }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormDoiMatKhau doimatkhau = new FormDoiMatKhau();
-            doimatkhau.Show();
+            FormDoiMatKhau formdoimatkhau = new FormDoiMatKhau();
+            formdoimatkhau.Show();
         }
         private void tạoTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTaoTaiKhoan TAO = new FormTaoTaiKhoan();
-            TAO.Show();
+            FormTaoTaiKhoan formtaotaikhoan = new FormTaoTaiKhoan();
+            formtaotaikhoan.Show();
         }
 
         
         private void tácGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormThongTinTacGia ttTG = new FormThongTinTacGia();
-            ttTG.Show();
+            FormThongTinTacGia formthongtintacgia = new FormThongTinTacGia();
+            formthongtintacgia.Show();
         }
 
         private void nhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormThongTinNhaXuatBan ttnxb = new FormThongTinNhaXuatBan();
-            ttnxb.Show();
+            FormThongTinNhaXuatBan formthongtinnhaxuatban = new FormThongTinNhaXuatBan();
+            formthongtinnhaxuatban.Show();
         }
 
         private void lĩnhVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormThongTinLinhVuc ttlv = new FormThongTinLinhVuc();
-            ttlv.Show();
+            FormThongTinLinhVuc formthongtinlinhvuc = new FormThongTinLinhVuc();
+            formthongtinlinhvuc.Show();
         }
 
         private void sáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormThongTinSach ttsach = new FormThongTinSach();
-            ttsach.Show();
+            FormThongTinSach formthongtinsach = new FormThongTinSach();
+            formthongtinsach.Show();
         }
 
         private void độcGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormThongTinDocGia ttDG = new FormThongTinDocGia();
-            ttDG.Show();
+            FormThongTinDocGia formthongtindocgia = new FormThongTinDocGia();
+            formthongtindocgia.Show();
         }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -233,20 +233,20 @@ namespace QuanLyThuVien
 
         private void tìmKiếmSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTimKiemSach Sach = new FormTimKiemSach();
-            Sach.Show();
+            FormTimKiemSach formtimkiemsach = new FormTimKiemSach();
+            formtimkiemsach.Show();
         }
 
         private void tìmKiếmĐGToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTimkiemDocGia Dg = new FormTimkiemDocGia();
-            Dg.Show();
+            FormTimkiemDocGia formtimkiemdocgia = new FormTimkiemDocGia();
+            formtimkiemdocgia.Show();
         }
 
         private void KiêmTratoolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FormKiemTraThongTinNhanVien K = new FormKiemTraThongTinNhanVien();
-            K.Show();
+            FormKiemTraThongTinNhanVien formkiemtrathongtinnhanvien = new FormKiemTraThongTinNhanVien();
+            formkiemtrathongtinnhanvien.Show();
         }
 
 
@@ -257,31 +257,31 @@ namespace QuanLyThuVien
 
         private void báoCáoSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormReportSach rps = new FormReportSach();
-            rps.Show();
+            FormReportSach formreportsach = new FormReportSach();
+            formreportsach.Show();
         }
 
         private void báoCáoLĩnhVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormReportLinhVuc rplv = new FormReportLinhVuc();
-            rplv.Show();
+            FormReportLinhVuc formreportlinhvuc = new FormReportLinhVuc();
+            formreportlinhvuc.Show();
         }
 
         private void báoCáoNXBToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormReportNhaXuatBan rpnxb = new FormReportNhaXuatBan();
-            rpnxb.Show();
+            FormReportNhaXuatBan formreportnhaxuatban = new FormReportNhaXuatBan();
+            formreportnhaxuatban.Show();
         }
         private void báoCáoĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmRPDocGia rpdg = new frmRPDocGia();
-            rpdg.Show();
+            frmRPDocGia formreportdocgia = new frmRPDocGia();
+            formreportdocgia.Show();
         }
 
         private void báoCáoTácGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormReportTacGia rptg = new FormReportTacGia();
-            rptg.Show();
+            FormReportTacGia formreporttacgia = new FormReportTacGia();
+            formreporttacgia.Show();
         }
 
         }

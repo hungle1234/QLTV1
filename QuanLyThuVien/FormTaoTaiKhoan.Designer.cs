@@ -43,9 +43,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(106, 122);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 17);
+            this.checkBox1.Size = new System.Drawing.Size(107, 17);
             this.checkBox1.TabIndex = 21;
             this.checkBox1.Text = "Show PassWord";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -53,10 +54,10 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(235, 146);
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(225, 146);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 24);
+            this.button2.Size = new System.Drawing.Size(75, 29);
             this.button2.TabIndex = 20;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
@@ -64,10 +65,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(106, 146);
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(136, 146);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 24);
+            this.button1.Size = new System.Drawing.Size(75, 29);
             this.button1.TabIndex = 19;
             this.button1.Text = "Đồng ý";
             this.button1.UseVisualStyleBackColor = true;
@@ -78,7 +79,7 @@
             this.textBox3.Location = new System.Drawing.Point(106, 96);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(260, 20);
+            this.textBox3.Size = new System.Drawing.Size(260, 22);
             this.textBox3.TabIndex = 18;
             // 
             // textBox2
@@ -86,58 +87,58 @@
             this.textBox2.Location = new System.Drawing.Point(106, 71);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
+            this.textBox2.Size = new System.Drawing.Size(260, 22);
             this.textBox2.TabIndex = 17;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(106, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 20);
+            this.textBox1.Size = new System.Drawing.Size(260, 22);
             this.textBox1.TabIndex = 16;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(23, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 14);
+            this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 15;
             this.label4.Text = "Xác Nhận Lại:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 14);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 14;
             this.label3.Text = "Mật Khẩu:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(18, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 14);
+            this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 13;
             this.label2.Text = "Tên Tài Khoản:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(100, 8);
+            this.label1.Location = new System.Drawing.Point(99, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 36);
+            this.label1.Size = new System.Drawing.Size(201, 40);
             this.label1.TabIndex = 12;
             this.label1.Text = "Tạo Tài Khoản";
             // 
-            // frmTaoTaiKhoan
+            // FormTaoTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +153,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmTaoTaiKhoan";
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "FormTaoTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaoTaiKhoan";
             this.Load += new System.EventHandler(this.TaoTaiKhoan_Load);

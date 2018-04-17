@@ -53,17 +53,22 @@
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
-            
-            
-            // frmttDocgia
+            // 
+            // xuấtRaExcelToolStripMenuItem
+            // 
+            this.xuấtRaExcelToolStripMenuItem.Name = "xuấtRaExcelToolStripMenuItem";
+            this.xuấtRaExcelToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
+            // 
+            // FormThongTinDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 524);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "frmttDocgia";
+            this.Name = "FormThongTinDocGia";
             this.Text = "Thông tin độc giả";
             this.Load += new System.EventHandler(this.ttDocgia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
