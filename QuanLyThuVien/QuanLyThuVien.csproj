@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F0AEF46-BEC4-4D66-B7CE-BE25EBEB7D2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6298.4486, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6298.4486\lib\net35-client\CircularProgressBar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetDocGia.cs">
+      <DependentUpon>DataSetDocGia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetDocGia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDocGia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetLinhVuc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetLinhVuc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetNhaXuatBan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetNhaXuatBan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSach.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSach.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTacGia.cs">
+      <DependentUpon>DataSetTacGia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetTacGia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTacGia.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapNhatDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatDocGia.Designer.cs">
+      <DependentUpon>FormCapNhatDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapNhatThongTinLinhVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatThongTinLinhVuc.Designer.cs">
+      <DependentUpon>FormCapNhatThongTinLinhVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapNhatNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatNhanVien.Designer.cs">
+      <DependentUpon>FormCapNhatNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapNhatNhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatNhaXuatBan.Designer.cs">
+      <DependentUpon>FormCapNhatNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapNhatTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatTacGia.Designer.cs">
+      <DependentUpon>FormCapNhatTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\clsDatabase.cs" />
+    <Compile Include="FormDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiMatKhau.Designer.cs">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKiemTraThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKiemTraThongTinNhanVien.Designer.cs">
+      <DependentUpon>FormKiemTraThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportDocGia.Designer.cs">
+      <DependentUpon>FormReportDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportLinhVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportLinhVuc.Designer.cs">
+      <DependentUpon>FormReportLinhVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportNhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportNhaXuatBan.Designer.cs">
+      <DependentUpon>FormReportNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportSach.Designer.cs">
+      <DependentUpon>FormReportSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportTacGia.Designer.cs">
+      <DependentUpon>FormReportTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FormTaoTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaoTaiKhoan.Designer.cs">
+      <DependentUpon>FormTaoTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimKiemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimKiemSach.Designer.cs">
+      <DependentUpon>FormTimKiemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCapNhatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCapNhatSach.Designer.cs">
+      <DependentUpon>FormCapNhatSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCapNhatDocGia.resx">
+      <DependentUpon>FormCapNhatDocGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCapNhatThongTinLinhVuc.resx">
+      <DependentUpon>FormCapNhatThongTinLinhVuc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCapNhatNhanVien.resx">
+      <DependentUpon>FormCapNhatNhanVien.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCapNhatNhaXuatBan.resx">
+      <DependentUpon>FormCapNhatNhaXuatBan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCapNhatSach.resx">
+      <DependentUpon>FormCapNhatSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCapNhatTacGia.resx">
+      <DependentUpon>FormCapNhatTacGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiMatKhau.resx">
+      <DependentUpon>FormDoiMatKhau.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKiemTraThongTinNhanVien.resx">
+      <DependentUpon>FormKiemTraThongTinNhanVien.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportDocGia.resx">
+      <DependentUpon>FormReportDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportLinhVuc.resx">
+      <DependentUpon>FormReportLinhVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportNhaXuatBan.resx">
+      <DependentUpon>FormReportNhaXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportSach.resx">
+      <DependentUpon>FormReportSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportTacGia.resx">
+      <DependentUpon>FormReportTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaoTaiKhoan.resx">
+      <DependentUpon>FormTaoTaiKhoan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimKiemSach.resx">
+      <DependentUpon>FormTimKiemSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimkiemDocGia.resx">
+      <DependentUpon>FormTimkiemDocGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinDocGia.resx">
+      <DependentUpon>FormThongTinDocGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinLinhVuc.resx">
+      <DependentUpon>FormThongTinLinhVuc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinNhaXuatBan.resx">
+      <DependentUpon>FormThongTinNhaXuatBan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinSach.resx">
+      <DependentUpon>FormThongTinSach.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinTacGia.resx">
+      <DependentUpon>FormThongTinTacGia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report10.rdlc" />
+    <EmbeddedResource Include="Report11.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Report9.rdlc" />
+    <None Include="app.config" />
+    <None Include="DataSetDocGia.xsc">
+      <DependentUpon>DataSetDocGia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDocGia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDocGia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetDocGia.xss">
+      <DependentUpon>DataSetDocGia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLinhVuc.xsc">
+      <DependentUpon>DataSetLinhVuc.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLinhVuc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetLinhVuc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetLinhVuc.xss">
+      <DependentUpon>DataSetLinhVuc.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNhaXuatBan.xsc">
+      <DependentUpon>DataSetNhaXuatBan.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetNhaXuatBan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetNhaXuatBan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetNhaXuatBan.xss">
+      <DependentUpon>DataSetNhaXuatBan.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSach.xsc">
+      <DependentUpon>DataSetSach.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSach.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSach.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSach.xss">
+      <DependentUpon>DataSetSach.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTacGia.xsc">
+      <DependentUpon>DataSetTacGia.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTacGia.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTacGia.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTacGia.xss">
+      <DependentUpon>DataSetTacGia.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FormTimkiemDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimkiemDocGia.Designer.cs">
+      <DependentUpon>FormTimkiemDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinDocGia.Designer.cs">
+      <DependentUpon>FormThongTinDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinLinhVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinLinhVuc.Designer.cs">
+      <DependentUpon>FormThongTinLinhVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinNhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinNhaXuatBan.Designer.cs">
+      <DependentUpon>FormThongTinNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinSach.Designer.cs">
+      <DependentUpon>FormThongTinSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinTacGia.Designer.cs">
+      <DependentUpon>FormThongTinTacGia.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onebit_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vrtableserat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
